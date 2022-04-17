@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="HTML alls tag">
+		<meta name="keword" content="base,a,abbr,p,address,img etc">
+		<meta name="author" content="Md. alamin Isla">
+		<meta name="revisit" content="15 days">
+		<title>HTML All Tag Projects</title>
+		<!-- base tag use -->
+		<base href="any/" />
+	</head>
+	<body>
+		<!--comment tag-->
+		<!-- a tag -->
+		<a href="#" target="_blank">Alamin Islam</a>
+		<!-- abbr tag -->
+		<p>I learn <abbr title="Hyper Text Markup Language">HTML</abbr></p>
+		<!-- address tag -->
+		<address>
+			Alamin Islam<br>
+			Bangladesh<br>
+			Kurigram,Phulbari<br>
+			Phone:01307354958
+		</address>
+		<!-- area tag -->
+		<img src="alamin.jpg" alt="Alamin pic" usemap="#mapPic"/>
+		<map name="mapPic">
+			<area shape="poly" coords="214,71,233,70,,233,62,254,79,234,96,233,88,214,87" href="image_search_1605144394322.jpg" target="blank" />
+		</map>
+		
+		<!-- article tag -->
+		<article>
+			<h2>About article tag</h2>
+			<p>Article tag is used for writting blog,probondho,foram post, news etc.</p>
+		</article>
+		
+		<!-- aside tag -->
+		<h3>aside tag for side bar</h3>
+		<p>aside tag is used for sidebar. It's used down of article.</p>
+		
+		<!-- audio tag -->
+		<audio controls>
+			<source src="Koi-Mahdir-Soinnora-Rukhte-Hobe-Dajjal.mp3" type="audio/mp3" />
+		</audio>
+		<br>
+		<!-- b tag -->
+		<b>I am a student of computer science</b>
+		<!-- button tag --><br>
+		<button type="button">Button</button>
+		<!-- input tag -->
+		<input type="Submit" value="Input Button" />
+		
+		<!-- canvas tag --><br>
+		<!-- draw a line -->
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000">don't supported your browser</canvas>
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(0,100);
+			ctx.lineTo(200,0);
+			ctx.stroke()
+		</script>
+		<!-- draw a circle -->
+		<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000"></canvas>
+		<script>
+			var c = document.getElementById("myCanvas2");
+			var ctx = c.getContext("2d");
+			ctx.arc(100,50,30,0,2*Math.PI);
+			ctx.stroke();
+		</script>
+		<!-- draw a flag -->
+		<canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000;background:green"></canvas>
+		<script>
+			var c = document.getElementById("myCanvas3");
+			var ctx = c.getContext("2d");
+			ctx.arc(100,50,32,0,2*Math.PI);
+			ctx.fillStyle = "red";
+			ctx.fill();
+		</script>
+		
+		<!-- draw a text -->
+		<canvas id="dText" width="200" height="100" style="border:1px solid black"></canvas>
+		<script>
+			var t = document.getElementById("dText");
+			var txt = t.getContext("2d");
+			txt.font = "30px Arial";
+			txt.fillText("Hellow Text",20,60)
+		</script>
+		<!-- draw stroke text -->
+		<canvas id="strokeText" width="200" height="100" style="border:1px solid #000"></canvas>
+		<script>
+			var s = document.getElementById("strokeText");
+			var stk = s.getContext("2d");
+			stk.font = "30px arial";
+			stk.strokeText("Hellow Stroke",10,60);
+		</script>
+		
+		
+		
+		<!-- caption tag with table -->
+		<table width="50%" border="1">
+			<colgroup>
+				<col span="1" style="background:pink"/>
+				<col span="1" style="background:blue"/>
+				<col span="1" style="background:purple"/>
+			</colgroup>
+			<caption>HTML table caption</caption>
+			<tr>
+				<th>One</th>
+				<th>Two</th>
+				<th>Three</th>
+			</tr>
+			<tr>
+				<td>Bangla</td>
+				<td>English</td>
+				<td>Math</td>
+			</tr>
+			<tr>
+				<td>Bangla</td>
+				<td>English</td>
+				<td>Math</td>
+			</tr>
+		</table>
+		
+		
+		<!-- cite tag -->
+		<h3>Poka humaun ahmed ar <cite>akti jonoprio uponnas</cite></h3>
+		
+		<!--code tag-->
+		<code>
+			This is code tag
+		</code><br>
+		<code>
+			let num= 255;<br>
+			alert("code")<br>;
+			alert("I used code tag")
+		</code>
+		
+		<!-- datalist tag --><br><br>
+		Choose <input list="tutorials"/>
+		<datalist id="tutorials">
+			<option value="HTML"></option>
+			<option value="CSS"></option>
+			<option value="JAVASCRIPT"></option>
+			<option value="BOOTSTRAP"></option>
+		</datalist>
+		
+		<br><br>
+		
+		<!-- dl,dt,dd tag -->
+		<dl>
+			<dt>Student</dt>
+			<dd>Student life is the best life</dd>
+			<dt>Teacher</dt>
+			<dd>Teacher teaches all student</dd>
+		</dl>
+		
+		<!-- del tag with ins -->
+		<p>Bangladesh mobile price <del>11,650Tk</del> <ins>10,150Tk</ins></p>
+		
+		<!-- details tag -->
+		<details>
+			<summary>Bangladesh details</summary>
+			<p>Pupulation problem is our main problem in Bangladesh</p>
+		</details>
+		
+		<details open>
+			<p>Population problem is our main promlem in Bangladesh</p>
+		</details>
+		
+		<!-- dfn tag  -->
+		<p>Now I am learning <dfn title="Hyper Text Markup Language">HTML</dfn> all tag</p>
+		
+		<!-- dialog tag -->
+		<dialog open>
+			<button>Dialog Button</button>
+		</dialog>
+		
+		<!-- em tag -->
+		<em>for writting important text is used</em>
+		
+		<br>
+		<!-- embed tag -->
+		<embed src="https://www.youtube.com/embed/bG5NXxLxmcA" />
+		
+		
+		
+		<!-- fieldset tag -->
+		<form>
+			<fieldset>
+				<legend>Your personal data</legend>
+				Name <input type="text" name="name" /><br><br>
+				Father's Name <input type="text" name="name" placeholder="Father's Name"/><br><br>
+				Mother's Name <input type="text" name="name" placeholder="Mother's Name"/><br><br>
+				E-mail <input type="email" name="email"/><br><br>
+				Date of birth <input type="date" /><br><br>
+				
+				Class :
+					<select>
+						<option value="Six">Six</option>
+						<option value="Seven">Seven</option>
+						<option value="Eight">Eight</option>
+						<option value="Nine">Nine</option>
+						<option value="Ten">Ten</option>
+					</select>
+				Gender <input type="radio" name="gender" value="male"/>Male
+						<input type="radio" name="gender" value="female"/>Female<br><br>
+						
+						<input type="Submit" value="Submit" />
+
+			</fieldset>
+		</form>
+		
+		<!-- figcaption and figure tag -->
+		<figure>
+			<img src="download.jpg" alt="Images" />
+			<figcaption>Nice picture</figcaption>
+		</figure>
+		
+		<!-- iframe tag -->
+		<iframe width="200" height="100" src="https://maps.google.com/maps?q=Chittagong%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0">
+		
+		</iframe>
+		
+		<!-- kbd tag -->
+		<p>Keyboard input shortcuts</p>
+		<p>To copy press <kbd>CTRL+C</kbd></p>
+		<p>To past press <kbd>CTRL+V</kbd></p>
+		
+		<!-- label tag -->
+		<form>
+			<label for="fName">First Name: </label>
+			<input type="text" name="name" id="fName" />
+			
+			<label>Last Name <input type="text" name="name" placeholder="Last Name"/></label><br>
+			<label>Male <input type="checkbox" name="checkbox"/></label>
+			<label>Female <input type="checkbox" name="checkbox"/></label>
+		</form>
+		
+		<h3>My name is <mark>Alamin Islam</mark></h3>
+		
+		<marquee style="font-size:25px;background:black;color:white;padding:10px;">Population problem is our main problem in <strong style="color:yellow;font-size:30px">Bangladesh</strong></marquee>
+		
+		<menu>
+			<li>List one</li>
+			<li>List two</li>
+			<li>List three</li>
+		</menu>
+		
+		
+		<!-- meter tag -->
+		<meter value="10" min="1" max="100"></meter><br>
+		
+		<!-- optgroup tag -->
+		<h3>Select the option of your choice </h3>
+		<select>
+			<optgroup label="Country of choice">
+				<option value="Bangladesh">Bangladesh</option>
+				<option value="Pakisthan">Pakisthan</option>
+				<option value="Arab">Arab</option>
+				<option value="Maleshia">Maleshia</option>
+			</optgroup>
+			
+			<optgroup label="Play of choice">
+				<option value="Cricket">Cricket</option>
+				<option value="Football">Football</option>
+				<option value="Badminton">Badminton</option>
+			</optgroup>
+			
+			<optgroup label="Color of choice">
+				<option value="Red">Red</option>
+				<option value="Blue">Blue</option>
+				<option value="Yellow">Yellow</option>
+				<option value="Green">Green</option>
+			</optgroup>
+		</select>
+		
+		<!-- meter and progress tag -->
+		Temp: <meter value="40" min="0" max="100"></meter>
+		Temp: <meter value="15" low="20" high="80" min="0" max="100"></meter>
+		Downloading : <progress value="40" max="100"></progress>
+		
+		<!-- object tag --><br>
+		<h2>Object tag example</h2>
+		<object width="50%" border="1" data="file:///F:/All%20Tutorials/Webdesign/HTML%20ALL%20TAG/All%20tag%20project/index.html">does not suport your browser's object </object>
+		
+		<br>
+		<!-- param tag -->
+		<h2>This is param tag</h2>
+		<object data="Koi-Mahdir-Soinnora-Rukhte-Hobe-Dajjal.mp3">
+			<param name="autoplay" value="true"/>
+		</object>
+		
+		<!-- samp tag --><br>
+		<samp>This is a sample output from a computer program</samp>
+		
+		<!-- small tag --><br>
+		<small>&copy;Copyright all html</small>
+		
+		<!-- Text Area --><br>
+		<textarea style="background:AliceBlue;resize:none;width:200px;height:100px" placeholder="Write here..."></textarea>
+		
+		<!-- time tag -->
+		<p>আমার মেয়ে মাহিমা  <time> 11-05-2010 </time> সালের  <time>12:30</time> PM জর্ম্মগ্রহণ করে।</p>
+		
+		<!-- video tag -->
+		<video controls>
+			<source src="video.mp4" type="video/mp4" />
+		</video>
+		<video src="video.mp4" type="video/mp4" controls>
+		</video>
+		
+		<!-- output tag -->
+		<form action="#">
+			<p>Enter Number in both fields and click on calculate button</p>
+			<input type="number" name="x"> + <input type="number" name="y"><br><br>
+			<input type="button" value="calculate" onClick="result.value = parseInt(x.value) + parseInt(y.value)"><br><br>
+			Total : <output name="result" for="x y"></output>
+		</form>
+		<br><br>
+		
+		<!-- ruby tag  -->
+		<ruby>
+			漢<rp>(</rp><rt>kan</rt><rp>)</rp>
+			漢<rp>(</rp><rt>ji</rt><rp>)</rp>
+		</ruby>
+		
+	</body>
+</html>
